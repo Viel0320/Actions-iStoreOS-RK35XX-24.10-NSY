@@ -773,7 +773,7 @@
 };
 
 &gmac1 {
-	status = "okay";
+	status = "disabled";
 	phy-mode = "sgmii";
 	rockchip,pipegrf = <&pipegrf>;
 	rockchip,xpcs = <&xpcs>;
@@ -1050,22 +1050,4 @@
 &saradc {
 	status = "okay";
 	vref-supply = <&vcc1v8_adc>;
-};
-
-&gpu {
-	status = "okay";
-};
-
-&bus_npu {
-	status = "okay";
-};
-
-&rknpu {
-	rknpu-supply = <&vdd_npu>;
-	mem-supply = <&vdd_npu>;
-	status = "okay";
-};
-
-&rknpu_mmu {
-	status = "okay";
 };
